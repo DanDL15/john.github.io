@@ -1,36 +1,21 @@
 .heading {text-align: center;
-
 	color: black;
 	font-family: "Comic Sans MS", "Comic Sans";
-
 	font-size: 500%;
-
 }
 
-
-
-
-
 ul {
-
   list-style-type: none;
-
   margin: 0;
-
   padding: 0;
-
   overflow: hidden;
-
   background-color: #333;
-
 }
 
 
 
 li {
-
   float: left;
-
 }
 
 
@@ -57,15 +42,10 @@ li a:hover:not(.active) {
 
 }
 
-
-
 .active {
-
   background-color: #04AA6D;
 
 }
-
-
 
 .voteButton {
 
@@ -87,9 +67,13 @@ li a:hover:not(.active) {
 
 
 .voteButton:hover {
-
   background-color: #ddd;
-
   color: black;
-
 }
+
+
+.banner {
+	width: 100%;
+	margin-top 15%;
+
+
