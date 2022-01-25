@@ -75,5 +75,42 @@ li a:hover:not(.active) {
     background-color: white;
     list-style-type: disc;
     font-size: 110%;
-    width: 80%;
+    width: 50%;
+    line-height: 150%;
+}
+
+#sid {
+    float: right;
+    margin-top: 2%;
+    width: 40%;
+    height: auto;
+    border-left: black;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+.news {
+    margin-left: 5%;
+    width: 40%;
+    outline: black;
+    outline-style: solid;
+    outline-width: 20%;
+    overflow: hidden;
+}
+
+.subnews {
+    margin-left: 5%;
+    width: 85%;
+    outline: rgb(175, 169, 169);
+    outline-style: solid;
+    outline-width: 20%;
+    overflow: hidden;
+    padding: 2%;
+    
+
+}
+
+.newsimage {
+    width: 30%;
+    height: auto;
+    float: right;
 }
