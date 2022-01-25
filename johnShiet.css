@@ -67,35 +67,26 @@ li a:hover:not(.active) {
 
 
 
-.block {
+.voteButton {
 
   display: block;
-
   width: 100%;
-
   border: none;
-
   background-color: red;
-
   color: white;
-
   padding: 14px 28px;
-
   font-size: 16px;
-
   cursor: pointer;
-
   text-align: center;
-
   transition-duration: 0.4s;
-
   cursor: pointer;
+	margin-top: 20%;
 
 }
 
 
 
-.block:hover {
+.voteButton:hover {
 
   background-color: #ddd;
 
