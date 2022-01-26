@@ -29,17 +29,16 @@ li a:hover:not(.active) {
 
 .voteButton {
   display: block;
-  width: 100%;
+  margins:auto;
   border: none;
-  background-color: red;
+  background-color: #111;
   color: white;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 20% 40%;
+  font-size: 40px;
   cursor: pointer;
   text-align: center;
   transition-duration: 0.4s;
-  cursor: pointer;
-	margin-top: 20%;
+
 }
 .voteButton:hover {
   background-color: #ddd;
@@ -98,7 +97,7 @@ li a:hover:not(.active) {
 }
 
 .subnews {
-    margin-left: 2%;
+    margin-left: 5%;
     width: 85%;
     outline: rgb(175, 169, 169);
     outline-style: solid;
@@ -115,9 +114,3 @@ li a:hover:not(.active) {
     float: right;
 }
 
-.Aidan{
-  margin-left: 5%;
-  width: 40%;
-  height: auto;
-
-}
