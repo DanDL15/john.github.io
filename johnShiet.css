@@ -98,7 +98,7 @@ li a:hover:not(.active) {
 }
 
 .subnews {
-    margin-left: 5%;
+    margin-left: 2%;
     width: 85%;
     outline: rgb(175, 169, 169);
     outline-style: solid;
@@ -113,4 +113,11 @@ li a:hover:not(.active) {
     width: 30%;
     height: auto;
     float: right;
+}
+
+.Aidan{
+  margin-left: 5%;
+  width: 40%;
+  height: auto;
+  
 }
