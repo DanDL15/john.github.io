@@ -1,123 +1,155 @@
 body {margin: 0;
-    padding: 0;
-
+  padding: 0;
+  min-height: 100vh;
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
 }
 li {
-  float: left;
+float: left;
 }
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
 }
 li a:hover:not(.active) {
-  background-color: #111;
+background-color: #111;
 }
 .active {
-  background-color: #1a8cff;
+background-color: #1a8cff;
 }
 
 .voteButton {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: red;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-  transition-duration: 0.4s;
-  cursor: pointer;
-	margin-top: 20%;
+display: block;
+width: 100%;
+border: none;
+background-color: red;
+color: white;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+text-align: center;
+transition-duration: 0.4s;
+cursor: pointer;
+margin-top: 20%;
 }
 .voteButton:hover {
-  background-color: #ddd;
-  color: black;
+background-color: #ddd;
+color: black;
 }
 
 .heading {text-align: center;
-	color: black;
-	font-family: "Comic Sans MS", "Comic Sans";
-	font-size: 900%;
+color: black;
+font-family: "Comic Sans MS", "Comic Sans";
+font-size: 900%;
 }
 
 
 .banner {
-	width: 100%;
-	margin-top: 1%;
-	height: auto;
-    margin: 0;
-    padding: 0;
+width: 100%;
+margin-top: 1%;
+height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .subheading {font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0px;
-    margin-left: 10%;
-    font-size: 400%;
-    text-decoration: underline;
-    text-decoration-color: #1a8cff;
+  letter-spacing: 0px;
+  margin-left: 10%;
+  font-size: 400%;
+  text-decoration: underline;
+  text-decoration-color: #1a8cff;
 }
 
 .infoList {
-    margin-left: 6%;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-    list-style-type: disc;
-    font-size: 110%;
-    width: 50%;
-    line-height: 150%;
+  margin-left: 6%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  list-style-type: disc;
+  font-size: 110%;
+  width: 50%;
+  line-height: 150%;
 }
 
 #sid {
-    float: right;
-    margin-top: 2%;
-    width: 40%;
-    height: auto;
-    border-left: black;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
+  float: right;
+  margin-top: 2%;
+  margin-right: 5%;
+  width: 20%;
+  height: auto;
+  border-left: black;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  outline: solid black 4px;
 }
 .news {
-    margin-left: 5%;
-    width: 40%;
-    outline: black;
-    outline-style: solid;
-    outline-width: 20%;
-    overflow: hidden;
+  margin-left: 5%;
+  width: 40%;
+  outline: black;
+  outline-style: solid;
+  outline-width: 20%;
+  overflow: hidden;
 }
 
 .subnews {
-    margin-left: 2%;
-    width: 85%;
-    outline: rgb(175, 169, 169);
-    outline-style: solid;
-    outline-width: 20%;
-    overflow: hidden;
-    padding: 2%;
-    
+  margin-left: 2%;
+  width: 85%;
+  outline: rgb(175, 169, 169);
+  outline-style: solid;
+  outline-width: 20%;
+  overflow: hidden;
+  padding: 2%;
+  
 
 }
 
 .newsimage {
-    width: 30%;
-    height: auto;
-    float: right;
+  width: 30%;
+  height: auto;
+  float: right;
 }
 
 .Aidan{
-  margin-left: 5%;
-  width: 40%;
-  height: auto;
+margin-left: 5%;
+width: 40%;
+height: auto;
 
 }
+
+.paypal{
+  float: left;
+}
+
+.footer {
+  position: sticky;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background: rgb(36, 34, 34);
+}
+
+.footerHeading {
+  color: rgb(214, 210, 210);
+  font-size: 200%;
+  margin-left: 21%;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  float: left;
+
+}
+
+.footerHeading:hover {
+  color: rgb(114, 51, 54);
+}
+
+
