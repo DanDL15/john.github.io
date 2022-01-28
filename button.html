@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Vote for John</title>
+    <link rel="stylesheet" type="text/css" href="johnShiet.css">
+
+</head>
+
+<body>
+
+
+
+
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#news" class="active">Vote</a></li>
+        <li><a href="aboutJohn.html">Your Candidate</a></li>
+        <li style="float:right"><a href="#about">Contact John</a></li>
+
+    </ul>
+    <audio id="sound1" src="MCbutton.mp3" preload="auto"></audio>
+
+    <button id="voteButton" onclick=onClick()>Vote</button>
+
+    <p class="voters">Votes: <a id="clicks">0</a></p>
+
+    <script>
+    var clicks = 0;
+
+    function onClick() {
+        const origAudio = document.getElementById("sound1");
+        const newAudio = origAudio.cloneNode()
+        newAudio.play()
+
+        document.getElementById("voteButton").addEventListener("pointerdown", pointerDown);
+        document.getElementById("voteButton").addEventListener("pointerup", pointerUp);
+        
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+        
+        }
+        function pointerDown() {
+          document.getElementById("voteButton").style.background = '#FF5442';
+        }
+
+        function pointerUp() {
+          document.getElementById("voteButton").style.background = '#111';
+        }
+    </script>
+
+</body>
+</html>
+<style>
+#voteButton {
+  display: block;
+  margin:auto;
+  margin-top:20%;
+  border: none;
+  background-color: #111;
+  color: white;
+  padding: 20% 40%;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+.voteButton:hover {
+  background-color: #ddd;
+  color: black;
+}
+.voters {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:200%;
+}
+</style>
+
+
+© 2022 GitHub, Inc.
