@@ -153,3 +153,30 @@ height: auto;
 }
 
 
+.aboutbody {
+  width: 80%;
+  background-color: #C3C3C3;
+  margin: auto;
+  height: auto;
+}
+
+.aboutSubHead {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  margin-left: 4%;
+  font-size: 400%;
+  text-decoration: underline;
+  text-decoration-color: #1a8cff;
+  padding-top: 2%;
+}
+
+.aboutText {
+  margin-left: 6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  list-style-type: disc;
+  font-size: 110%;
+  width: 90%;
+  line-height: 150%;
+  padding-bottom: 2%
+}
