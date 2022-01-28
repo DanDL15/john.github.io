@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Vote for John</title>
+	<link rel="stylesheet" type="text/css" href="johnShiet.css">
+
+</head>
+
+<body>
+
+
+
+
+
+<ul>
+
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#news"  class="active" >Vote</a></li>
+  <li><a href="aboutJohn.html">Your Candidate</a></li>
+  <li style="float:right"><a href="#about">Contact John</a></li>
+
+</ul>
+
+
+<button id="voteButton">Vote</button>
+
+<script>
+document.getElementById("voteButton").addEventListener("pointerdown", pointerDown);
+document.getElementById("voteButton").addEventListener("pointerup", pointerUp);
+
+function pointerDown() {
+  document.getElementById("voteButton").style.background = '#FF5442';
+}
+
+function pointerUp() {
+  document.getElementById("voteButton").style.background = '#111';
+}
+</script>
+
+</body>
+<!--
+#voteButton {
+  display: block;
+  margin:auto;
+  margin-top:20%;
+  border: none;
+  background-color: #111;
+  color: white;
+  padding: 20% 40%;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+  transition-duration: 0.4s;
+
+}
+.voteButton:hover {
+  background-color: #ddd;
+  color: black;
+}
+-->
+
+</body>
+
+</html>
