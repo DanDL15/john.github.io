@@ -180,3 +180,11 @@ height: auto;
   line-height: 150%;
   padding-bottom: 2%
 }
+
+
+.gallery {
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 15%;
+  height: auto;
+}
