@@ -195,3 +195,15 @@ height: auto;
   margin-left: 5%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.ultrawide {
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  
+}
+
+.center {
+  text-align: center;
+}
