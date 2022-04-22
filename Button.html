@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onload="refresh()">
 
 
 
@@ -24,16 +24,23 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="#button" class="active">Vote</a></li>
         <li><a href="aboutJohn.html">Your Candidate</a></li>
-  		<li><a href="gallery.html">Gallery</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Why John Shouldn't be Captain</a></li>
         <li style="float:right"><a href="https://forms.gle/mxNmBBEosTusBtgq8">John's Form</a></li>
 
     </ul>
+
+    <h1 class="subheading">Johns Supporters</h1>
+    <p class="aboutText">You can show your support for John! By completing this <a href="https://forms.gle/mxNmBBEosTusBtgq8">short google forms</a> you can add onto the list of people who are supporting John! <br> <br>John currently has <a href="https://docs.google.com/spreadsheets/d/1y_ju7NVGhQRfo_S73JGTS6Seq98wV7K3AMKay55OICs/edit#gid=0&range=K1"><img src="https://shields.io/endpoint?url=https%3A%2F%2Fcellshield.info%2Fgs%3FspreadSheetId%3D1y_ju7NVGhQRfo_S73JGTS6Seq98wV7K3AMKay55OICs%26cellRange%3DK1" alt="" style="width: 4%"></a> supporters! Join the Cowan Crew now!
+
+    <br><br><br><br><br>
+    <h1 class="subheading">Your Vote Matters</h1>
+    <p class="aboutText">Click on this button and tally up as many votes as you can get! These are your personal votes so keep clicking and be John's biggest supporter!</p>
     <audio id="sound1" src="images/Mcbutton.mp3" preload="auto"></audio>
 
     <button id="voteButton" onclick=onClick()>Vote</button>
 
-    <p class="voters">Votes: <a id="clicks">68</a></p>
+    <p class="voters">Your Votes: <a id="demo"></a></p>
     
     <div class="footer">
         <a href="https://www.youtube.com/channel/UC1bdlil6vTRell2La_oY2QQ" class="footerHeading">YouTube</a>
@@ -42,8 +49,11 @@
 
     </div>
 
+
+
     <script>
-    var clicks = 68;
+
+
 
     function onClick() {
         const origAudio = document.getElementById("sound1");
@@ -53,8 +63,16 @@
         document.getElementById("voteButton").addEventListener("pointerdown", pointerDown);
         document.getElementById("voteButton").addEventListener("pointerup", pointerUp);
         
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+        
+        if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+        localStorage.clickcount = 1;}
+        document.getElementById("demo").innerHTML = localStorage.clickcount;
+
+
+        
+        
         
         }
         function pointerDown() {
@@ -64,6 +82,10 @@
         function pointerUp() {
           document.getElementById("voteButton").style.background = '#111';
         }
+
+    function refresh() {
+      document.getElementById("demo").innerHTML = localStorage.clickcount;
+    }
     </script>
 
 </body>
@@ -72,7 +94,6 @@
 #voteButton {
   display: block;
   margin:auto;
-  margin-top:20%;
   border: none;
   background-color: #111;
   color: white;
